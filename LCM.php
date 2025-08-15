@@ -1,6 +1,25 @@
+<html>
+
+<head></head>
+
+<body>
+<body>
+    <div style="text-align:right; justify-content:right; position:rtl">
+        <form method="post">
+                        <label for="nom">عدد اول را وارد کنید</label>
+            <input type="text" name="nom" id="nom" style="margin:10px;"><br>
+                        <label for="nom2">عدد دوم را وارد کنید</label>
+            <input type="text" name="nom2" id="nom2" style="margin:10px;"><br>
+            <input type="submit" name="submit" id="submit" value="send." style="margin:10px;">
+            <label for="submit"></label>
+        </form>
+    </div>
+</body>
+
+</html>
 <?php 
-  $a=10;
-  $b=55;
+  $a=$_POST["nom"];
+  $b=$_POST["nom2"];
   $x=1;
   $y=1;
   $lcm=0;
