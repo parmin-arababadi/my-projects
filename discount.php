@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $status=htmlspecialchars($discount);
     $status2=htmlspecialchars($price);
     if($status && $status2 ){
-    if ($discount <= 100) {
+    if ($discount <= 100 && $discount>0) {
         function discount(int $price, int $discount): int
         {
             $result = $price - ($price * $discount / 100);
@@ -38,6 +38,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     } else {
         echo '<p style=" width: 200px; background-color: red; margin-left: 1050px; text-align: right; font-size: 20px;"> خطا:مقدار فیلد ها معتبر نیستند</p>';
     }
+}else{
+    '<p style=" width: 200px; background-color: red; margin-left: 1050px; text-align: right; font-size: 20px;"> خطا:مقدار فیلد ها معتبر نیستند</p>';
 }
 }
 
